@@ -1,5 +1,5 @@
-import fs from 'fs';
-import pako from 'pako';
+const fs = require('fs');
+const pako = require('pako');
 
 const wasm = Buffer.from(pako.deflate(fs.readFileSync('src/build/js/em-worker.wasm'), { level: 9 })).toString('base64');
 fs.writeFileSync('src/build/js/wasm.str.js', `export default "${wasm}"`);

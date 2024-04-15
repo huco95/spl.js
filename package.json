@@ -3,7 +3,6 @@
   "version": "0.1.1",
   "description": "SpatiaLite and friends - sqlite, geos, proj, rttopo - for node and browser.",
   "main": "dist/index.js",
-  "type": "module",
   "scripts": {
     "test:node": "node test/node.js",
     "test:electron": "node test/electron.js",
